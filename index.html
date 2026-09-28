@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 3: Componentes Visuales - Mundo Animal</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/componente.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Galería de Animales</h1>
+       
+
+        
+        <div class="demo-section">
+            <h2>Carrusel de Animales</h2>
+            
+            <div class="ui-carousel" id="animalCarousel">
+                <button class="ui-carousel-btn ui-carousel-prev">&#10094;</button>
+                <div class="ui-carousel-track-container">
+                    <ul class="ui-carousel-track" id="carouselTrack"></ul>
+                </div>
+                <button class="ui-carousel-btn ui-carousel-next">&#10095;</button>
+            </div>
+        </div>
+
+        
+        <div class="demo-section">
+            <h2>Estadísticas</h2>
+            
+            <div class="ui-progress-wrapper">
+                <div class="ui-progress-info">
+                    <span id="labelStat1">Agilidad / Velocidad</span>
+                    <span id="textStat1">0%</span>
+                </div>
+                <div class="ui-progress-bar-container">
+                    <div class="ui-progress-bar" id="barStat1"></div>
+                </div>
+            </div>
+
+            <div class="ui-progress-wrapper">
+                <div class="ui-progress-info">
+                    <span id="labelStat2">Esperanza de Vida</span>
+                    <span id="textStat2">0%</span>
+                </div>
+                <div class="ui-progress-bar-container">
+                    <div class="ui-progress-bar" id="barStat2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/componente.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

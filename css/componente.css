@@ -1,0 +1,111 @@
+:root {
+    --transition: all 0.3s ease;
+}
+
+
+.ui-carousel {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    background: #0f172a;
+}
+
+.ui-carousel-track-container {
+    overflow: hidden;
+    width: 100%;
+    height: 400px; 
+}
+
+.ui-carousel-track {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+    height: 100%;
+}
+
+.ui-carousel-slide {
+    min-width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.ui-carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block;
+}
+
+.ui-carousel-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(15,23,42,0.9), transparent);
+    color: #f8fafc;
+    padding: 25px 20px 15px 20px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.ui-carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(15, 23, 42, 0.6);
+    color: white;
+    border: none;
+    font-size: 1.3rem;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%; 
+    transition: background 0.2s, transform 0.2s;
+}
+
+.ui-carousel-btn:hover { 
+    background: rgba(15, 23, 42, 0.9);
+    transform: translateY(-50%) scale(1.1);
+}
+.ui-carousel-prev { left: 15px; }
+.ui-carousel-next { right: 15px; }
+
+
+.ui-progress-wrapper {
+    margin: 18px 0;
+}
+
+.ui-progress-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #cbd5e1;
+    margin-bottom: 8px;
+}
+
+.ui-progress-bar-container {
+    width: 100%;
+    background-color: #334155;
+    border-radius: 9999px;
+    overflow: hidden;
+    height: 12px;
+}
+
+.ui-progress-bar {
+    width: 0%;
+    height: 100%;
+    background: #3b82f6; 
+    border-radius: 9999px;
+    transition: width 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
