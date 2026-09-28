@@ -21,7 +21,7 @@
 6. [Referencia de la API](#-referencia-de-la-api)
 7. [Personalización](#-personalización)
 8. [Tecnologías](#-tecnologías)
-
+9. [Capturas de pantalla](#-capturas-de-pantalla)
 ---
 
 ## 🎯 ¿Qué problema resuelve?
@@ -441,6 +441,16 @@ Sin frameworks ni dependencias externas.
 
 ---
 
-## 📜 Licencia
+## 📸 Capturas de pantalla
 
-Proyecto académico desarrollado con fines educativos.
+### Captura 2
+
+Al presionar **›** el carrusel desliza a la siguiente imagen y las barras se llenan con los datos del nuevo animal.
+
+![Captura 2 del carrusel funcionando](img/cap2.png)
+
+### Captura 3
+
+El mismo componente con otro elemento del arreglo de datos: cambian la imagen, el pie de foto y las estadísticas.
+
+![Captura 3 del carrusel funcionando](img/cap3.png)
